@@ -7,7 +7,7 @@ def otworz_plik(nazwa_pliku):
         plik = open(nazwa_pliku, "r", encoding="utf-8")
         return plik
     except FileNotFoundError:
-        print("Nie znaleziono pliku")
+        print("Nie znaleziono pliku do wczytania")
         return None
 
 def wgraj_do_bazy(dane):
